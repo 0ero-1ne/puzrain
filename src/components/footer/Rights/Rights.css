@@ -1,0 +1,30 @@
+footer .footer-rights {
+    width: 200px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.footer-rights .footer-rights_block {
+    width: 190px;
+    height: 40px;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 800px) {
+    footer .footer-rights {
+        width: 160px;
+        height: 80px;
+        justify-content: space-between;
+    }
+
+    .footer-rights .footer-rights_block {
+        width: 160px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
