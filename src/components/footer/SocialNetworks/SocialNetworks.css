@@ -1,0 +1,35 @@
+footer .footer-socialnets {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: 100px;
+    margin-left: 110px;
+}
+
+.footer-socialnets .footer-socialnets_item {
+    width: 80px;
+    height: 80px;
+}
+
+.footer-socialnets_item img {
+    width: 80px;
+    height: 80px;
+    display: block;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    footer .footer-socialnets {
+        width: 400px;
+    }
+
+    .footer-socialnets .footer-socialnets_item {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer-socialnets_item img {
+        width: 60px;
+        height: 60px;
+    }
+}
