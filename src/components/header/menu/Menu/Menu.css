@@ -1,0 +1,31 @@
+header .header-menu {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu .header-menu_item {
+    width: 100px;
+    height: 30px;
+}
+
+.header-menu_item > a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    transition: 0.2s;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.header-menu_item > a:hover {
+    color: #a0a0a0;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 800px) {
+    .header-menu .header-menu_item {
+        width: 80px;
+    }
+}
