@@ -1,0 +1,42 @@
+main .main-product {
+    width: 250px;
+    height: 360px;
+    padding: 10px;
+}
+
+.main-product .product-image {
+    height: 230px;
+    background-color: blanchedalmond;
+    margin-bottom: 10px;
+}
+
+.main-product .product-description {
+    height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: aqua;
+    margin-bottom: 10px;
+}
+
+.main-product .product-control {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-control .product-price {
+    width: 130px;
+    height: 40px;
+    background-color: aqua;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: center;
+}
+
+.product-control .product-button {
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    cursor: pointer;
+}
