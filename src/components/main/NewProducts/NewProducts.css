@@ -1,0 +1,19 @@
+main .main-newproducts {
+    width: 1200px;
+    height: 800px;
+    margin-top: 20px;
+}
+
+.main-newproducts .newproducts-header {
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.main-newproducts .newproducts-list {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: 360px 360px;
+    justify-content: center;
+    gap: 10px
+}
