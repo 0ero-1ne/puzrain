@@ -1,0 +1,17 @@
+main .main-videoreviews {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.main-videoreviews .video-header {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.main-videoreviews .videoreviews-videos {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
