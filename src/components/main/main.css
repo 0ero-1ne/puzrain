@@ -1,0 +1,12 @@
+main {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    margin-top: 20px;
+}
+
+main .content {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
