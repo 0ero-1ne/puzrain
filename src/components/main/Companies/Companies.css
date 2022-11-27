@@ -1,0 +1,12 @@
+main .main-companies {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-companies .company-img {
+    display: block;
+    width: 150px;
+    height: 150px;
+}
