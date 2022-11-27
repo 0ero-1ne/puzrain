@@ -1,0 +1,36 @@
+main .main-comments {
+    width: 100%;
+}
+
+.main-comments .comments-header {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.main-comments .comments-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.main-comments .comments-more {
+    display: block;
+    text-align: right;
+    padding-right: 100px;
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.comments-more > a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s;
+}
+
+.comments-more > a:hover {
+    color: grey;
+}
