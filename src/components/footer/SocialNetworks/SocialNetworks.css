@@ -13,9 +13,10 @@ footer .footer-socialnets {
 }
 
 .footer-socialnets_item img {
-    width: 80px;
-    height: 80px;
+    width: 78px;
+    height: 78px;
     display: block;
+    border-radius: 20px;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1199px) {
@@ -29,7 +30,8 @@ footer .footer-socialnets {
     }
 
     .footer-socialnets_item img {
-        width: 60px;
-        height: 60px;
+        width: 58px;
+        height: 58px;
+        border-radius: 15px;
     }
 }
