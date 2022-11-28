@@ -5,7 +5,7 @@ import NewProducts from "../components/main/NewProducts/NewProducts";
 import Comments from "../components/main/Comments/Comments";
 import Companies from "../components/main/Companies/Companies";
 
-import '../components/main/main.css';
+import '../components/main/Main.css';
 
 export default function Main() {
     return (
