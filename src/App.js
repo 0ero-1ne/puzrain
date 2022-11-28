@@ -1,9 +1,11 @@
 import { Routes, BrowserRouter, Route } from 'react-router-dom';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
-import About from './pages/about';
-import PLP from './pages/plp';
 import Main from './pages/main';
+import About from './pages/about';
+import Delivery from './pages/delivery';
+import Contacts from './pages/contacts';
+import Payment from './pages/payment';
 
 import './App.css';
 
@@ -15,6 +17,9 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Main />}/>
                     <Route path="/about" element={<About />}/>
+                    <Route path="/delivery" element={<Delivery />}/>
+                    <Route path="/payment" element={<Payment />}/>
+                    <Route path="/contacts" element={<Contacts />}/>
                 </Routes>
             </BrowserRouter>
             <Footer />
