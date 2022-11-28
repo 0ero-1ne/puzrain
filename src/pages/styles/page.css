@@ -1,0 +1,65 @@
+.main-infopage h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.main-infopage h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.main-infopage p {
+    text-indent: 40px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.main-infopage p > a {
+    color: black;
+}
+
+.main-infopage ol {
+    list-style-position: inside;
+    font-size: 20px;
+}
+
+.main-infopage p > a:hover {
+    color: rgb(75, 75, 75);
+}
+
+.main-infopage .infopage-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 35px;
+}
+
+.infopage-images img {
+    height: 300px;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .infopage-images img {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .main-infopage .infopage-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    .main-infopage p {
+        text-indent: 25px;
+        text-align: justify;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 15px 0;
+    }
+}
