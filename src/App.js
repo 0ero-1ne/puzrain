@@ -6,6 +6,7 @@ import About from './pages/about';
 import Delivery from './pages/delivery';
 import Contacts from './pages/contacts';
 import Payment from './pages/payment';
+import BasketPage from './pages/basket';
 
 import './App.css';
 
@@ -20,6 +21,7 @@ function App() {
                     <Route path="/delivery" element={<Delivery />}/>
                     <Route path="/payment" element={<Payment />}/>
                     <Route path="/contacts" element={<Contacts />}/>
+                    <Route path="/basket" element={<BasketPage />}/>
                 </Routes>
             </BrowserRouter>
             <Footer />
