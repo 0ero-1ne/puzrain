@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Puzrain
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Этот проект был создан с помощью [Create React App](https://github.com/facebook/create-react-app). Это просто курсовая работа, ничего необычного.
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Available Scripts
 
@@ -39,11 +42,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Дополнительные технологии
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+В этом проекте использовалась база данных MySQL, а работать с ней помог пакет npm mysql2
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
