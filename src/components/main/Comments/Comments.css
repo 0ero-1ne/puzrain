@@ -34,3 +34,17 @@ main .main-comments {
 .comments-more > a:hover {
     color: grey;
 }
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .main-comments .comments-header {
+        font-size: 45px;
+    }
+    
+    .main-comments .comments-items {
+        column-gap: 100px;
+    }
+    
+    .main-comments .comments-items .comments-comment:last-child {
+        display: none;
+    }
+}

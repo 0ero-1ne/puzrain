@@ -1,6 +1,5 @@
 main .main-popproducts {
-    width: 1200px;
-    height: 800px;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -16,4 +15,23 @@ main .main-popproducts {
     grid-template-rows: 360px 360px;
     justify-content: center;
     gap: 10px
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .main-popproducts .popproducts-list {
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: 360px 360px;
+    }
+
+    .main-popproducts .popproducts-header {
+        font-size: 45px;
+    }
+
+    .main-popproducts .popproducts-list .main-product:nth-child(8) {
+        display: none;
+    }
+
+    .main-popproducts .popproducts-list .main-product:nth-child(7) {
+        display: none;
+    }
 }

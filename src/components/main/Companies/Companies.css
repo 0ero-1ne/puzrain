@@ -3,6 +3,7 @@ main .main-companies {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main-companies .company-img {
