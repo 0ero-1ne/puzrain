@@ -1,0 +1,14 @@
+.main-pdp .main-pdp_description {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.main-pdp_description h2 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.main-pdp_description p {
+    margin-bottom: 5px;
+}
