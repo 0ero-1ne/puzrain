@@ -1,0 +1,32 @@
+.main-pdp_control .main-pdp_product {
+    width: 450px;
+    height: 330px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.2s;
+}
+
+.main-pdp_product img {
+    display: block;
+    width: 330px;
+    height: 330px;
+}
+
+.main-pdp_product .pdp-product_images {
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pdp-product_images .pdp-product_image {
+    width: 100px;
+    cursor: pointer;
+}
+
+.pdp-product_image > img {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
