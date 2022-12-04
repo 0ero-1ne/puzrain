@@ -2,6 +2,8 @@ import '../components/main/Main.css';
 import './styles/page.css';
 
 export default function Contacts() {
+    document.querySelector('title').innerText = "Puzrain - Контакты";
+
     return (
         <main>
             <div className="content">

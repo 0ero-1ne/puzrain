@@ -2,6 +2,8 @@ import '../components/main/Main.css';
 import './styles/page.css';
 
 export default function Payment() {
+    document.querySelector('title').innerText = "Puzrain - Оплата";
+
     return (
         <main>
             <div className="content">

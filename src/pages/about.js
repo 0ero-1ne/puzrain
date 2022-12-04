@@ -2,6 +2,8 @@ import '../components/main/Main.css';
 import './styles/page.css';
 
 export default function About() {
+    document.querySelector('title').innerText = "Puzrain - О нас";
+
     return (
         <main>
             <div className="content">
