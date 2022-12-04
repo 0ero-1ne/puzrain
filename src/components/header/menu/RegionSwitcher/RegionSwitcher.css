@@ -6,6 +6,7 @@
     text-align: center;
     cursor: pointer;
     position: relative;
+    border-radius: 5px;
 }
 
 .regswitch span {
@@ -14,8 +15,10 @@
 }
 
 .regions {
-    background-color: white;
+    background-color: transparent;
     width: 130px;
+    z-index: 2;
+    position: relative;
 }
 
 .regions .region-item {
@@ -24,6 +27,7 @@
     background-color: #f5f5f5;
     padding-top: 5px;
     transition: 0.2s;
+    border-bottom: 1px solid #c4c4c4;
 }
 
 .regions .region-item:hover {

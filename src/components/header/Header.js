@@ -17,7 +17,7 @@ export default function Header()
                 </div>
                 <div className="header-row row-two">
                     <div className="header-logo">
-                        <img src="logo.svg" alt="Logo" width="80px" style={{display: 'block'}}/>
+                        <a href="/"><img src="logo.svg" alt="Logo" width="80px" style={{display: 'block'}}/></a>
                     </div>
                     <Catalog />
                     <Searchbar />
