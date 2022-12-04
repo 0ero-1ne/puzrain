@@ -7,6 +7,7 @@ import Delivery from './pages/delivery';
 import Contacts from './pages/contacts';
 import Payment from './pages/payment';
 import BasketPage from './pages/basket';
+import PDPPage from './pages/pdp';
 
 import './App.css';
 
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/payment" element={<Payment />}/>
                     <Route path="/contacts" element={<Contacts />}/>
                     <Route path="/basket" element={<BasketPage />}/>
+                    <Route path="/product" element={<PDPPage />}/>
                 </Routes>
             </BrowserRouter>
             <Footer />
