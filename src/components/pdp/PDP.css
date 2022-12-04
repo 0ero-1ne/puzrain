@@ -1,0 +1,12 @@
+.main-pdp .main-pdp_control {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-pdp .main-pdp_thanks {
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+}
