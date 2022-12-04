@@ -1,0 +1,86 @@
+.main-pdp_control .main-pdp_panel {
+    width: 700px;
+    padding: 10px;
+}
+
+.main-pdp_panel .pdp-panel_title {
+    color: #000000;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.pdp-panel_title .stock_status {
+    margin-left: 20px;
+    padding: 5px 20px;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.pdp-panel_title .stock_status_true {
+    background: #00ff00;
+}
+
+.pdp-panel_title .stock_status_false {
+    background: #ff0000;
+}
+
+.main-pdp_control .pdp-panel_main {
+    margin-top: 30px;
+    display: flex;
+}
+
+.pdp-panel_buttons .pdp-panel_price {
+    width: 200px;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.pdp-panel_buttons .pdp-panel_button {
+    width: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.pdp-panel_buttons .basket_button {
+    border: 1px solid #c10000;
+    transition: 0.2s;
+}
+
+.pdp-panel_buttons .basket_button:hover {
+    background-color: #c10000;
+    color: white;
+}
+
+.pdp-panel_buttons .fav_button {
+    border: 1px solid #ffa600;
+    transition: 0.2s;
+}
+
+.pdp-panel_buttons .fav_button:hover {
+    background-color: #ffa600;
+    color: white;
+}
+
+.pdp-panel_main .pdp-panel_info {
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.pdp-panel_info .panel-info_part {
+    margin-bottom: 20px;
+}
+
+.pdp-panel_info h3 {
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
