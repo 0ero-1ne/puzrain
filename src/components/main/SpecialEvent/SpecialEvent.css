@@ -6,6 +6,7 @@ main .main-event {
     background-size: 1200px;
     border-radius: 20px;
     padding: 50px 50px;
+    z-index: 1;
 }
 
 .main-event .event-text {

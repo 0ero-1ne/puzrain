@@ -1,8 +1,8 @@
 import './ProductElement.css';
 
-export default function ProductElement(prop) {
+export default function ProductElement() {
     return (
-        <div className="main-product" key={prop.keyValue}>
+        <div className="main-product">
             <div className="product-image"></div>
             <div className="product-description"></div>
             <div className="product-control">
