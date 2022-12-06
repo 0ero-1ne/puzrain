@@ -8,10 +8,16 @@ import Contacts from './pages/contacts';
 import Payment from './pages/payment';
 import BasketPage from './pages/basket';
 import PDPPage from './pages/pdp';
+import PLPPage from './pages/plp';
 
 import './App.css';
+import URLS from './URLS';
 
 function App() {
+
+    if (URLS.indexOf(window.location.pathname) === -1)
+        return window.location.pathname = "/";
+
     return (
         <>
             <Header />
@@ -24,6 +30,7 @@ function App() {
                     <Route path="/contacts" element={<Contacts />}/>
                     <Route path="/basket" element={<BasketPage />}/>
                     <Route path="/product" element={<PDPPage />}/>
+                    <Route path="/catalog" element={<PLPPage />}/>
                 </Routes>
             </BrowserRouter>
             <Footer />
