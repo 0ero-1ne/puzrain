@@ -1,0 +1,11 @@
+.main-plp .plp-header {
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.main-plp .plp-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
