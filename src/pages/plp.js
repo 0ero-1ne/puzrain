@@ -1,9 +1,13 @@
-export default function PLP () {
+import PLP from "../components/plp/PLP";
+
+export default function PLPPage () {
     document.querySelector('title').innerText = "Puzrain - Каталог";
 
     return (
         <main>
-            <h1>Product List Page</h1>
+            <div className="content">
+                <PLP />
+            </div>
         </main>
     );
 }
