@@ -8,20 +8,16 @@ import './PDP.css';
 
 export default function PDP() {
     return (
-        <main>
-            <div className="content">
-                <div className="main-pdp">
-                    <Breadcrumbs value="Catalog / 3x3 / Gan Super Puper 357" />  
-                    <div className="main-pdp_control">
-                        <PDPProduct />
-                        <Panel />
-                    </div>
-                    <Description />
-                    <div className="main-pdp_thanks">
-                        Спасибо, что выбираете нас :)
-                    </div>
-                </div>
+        <div className="main-pdp">
+            <Breadcrumbs value="Catalog / 3x3 / Gan Super Puper 357" />  
+            <div className="main-pdp_control">
+                <PDPProduct />
+                <Panel />
             </div>
-        </main>
+            <Description />
+            <div className="main-pdp_thanks">
+                Спасибо, что выбираете нас :)
+            </div>
+        </div>
     );
 }
