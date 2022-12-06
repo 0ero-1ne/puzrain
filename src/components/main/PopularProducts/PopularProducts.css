@@ -7,6 +7,7 @@ main .main-popproducts {
     text-align: center;
     font-weight: 500;
     font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .main-popproducts .popproducts-list {

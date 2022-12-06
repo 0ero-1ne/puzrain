@@ -1,13 +1,16 @@
 main .main-product {
-    width: 250px;
-    height: 360px;
-    padding: 10px;
+    width: 230px;
+    height: 337px;
 }
 
 .main-product .product-image {
     height: 230px;
     background-color: blanchedalmond;
     margin-bottom: 10px;
+}
+
+.product-image img {
+    display: block;
 }
 
 .main-product .product-description {
