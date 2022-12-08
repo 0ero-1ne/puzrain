@@ -1,7 +1,11 @@
 .plp-content .plp-content_products {
-    width: 750px;
+    width: 800px;
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(3, 230px);
     row-gap: 30px;
 }
+
+/* .plp-content_products .plp-products_product {
+    border: 1px solid black;
+} */

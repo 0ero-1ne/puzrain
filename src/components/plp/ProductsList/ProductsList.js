@@ -1,19 +1,26 @@
+import { useState, useEffect } from "react";
 import ProductElement from "../../main/ProductElement/ProductElement";
 
 import './ProductsList.css';
 
 export default function ProductsList() {
-    let products = [];
+    const [products, setProducts] = useState([]);
 
-    for (let i = 0; i < 8; i++) {
-        products.push(
-            <ProductElement key={"catalog-" + i} />
+    useEffect(() => {
+        fetch('http://localhost:3001/products')
+            .then(res => res.json())
+            .then(data => setProducts(data));
+    }, []);
+
+    const productsList = products.map(product => {
+        return (
+            <ProductElement key={product._id} value={product} className="plp-products_product"/>
         );
-    }
+    })
 
     return (
         <div className="plp-content_products">
-            {products}
+            {productsList}
         </div>
     );
 }
