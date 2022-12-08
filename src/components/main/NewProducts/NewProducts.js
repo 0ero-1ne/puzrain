@@ -14,7 +14,7 @@ export default function NewProducts() {
         <div className="main-newproducts">
             <h2 className="newproducts-header">Новые товары</h2>
             <div className="newproducts-list">
-                {products}
+                {/* {products} */}
             </div>
         </div>
     );

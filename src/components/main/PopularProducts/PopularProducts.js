@@ -14,7 +14,7 @@ export default function PopularProducts() {
         <div className="main-popproducts">
             <h2 className="popproducts-header">Популярные товары</h2>
             <div className="popproducts-list">
-                {products}
+                {/* {products} */}
             </div>
         </div>
     );
