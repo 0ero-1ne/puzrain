@@ -1,0 +1,15 @@
+.plp-content_filters .filters-categories {
+    transition: 0.2s ease;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+}
+
+.filters-categories .filters-categories_category {
+    font-size: 16px;
+    margin-bottom: 5px;
+    width: fit-content;
+}
+
+.filters-categories_category label input{
+    margin-right: 5px;
+}

@@ -1,7 +1,13 @@
 .main-plp .plp-content_filters {
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
     border: 1px solid #c4c4c4;
     width: 350px;
     height: 500px;
-    padding: 10px;
+    padding: 20px;
+}
+
+.plp-content_filters h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
