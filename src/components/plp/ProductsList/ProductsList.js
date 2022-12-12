@@ -17,6 +17,7 @@ export default function ProductsList() {
             <ProductElement key={product._id} value={product} className="plp-products_product"/>
         );
     })
+    productsList.sort(() => Math.random() - 0.5);
 
     return (
         <div className="plp-content_products">
