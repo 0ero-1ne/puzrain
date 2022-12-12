@@ -4,10 +4,14 @@ export default function ProductElement(props) {
     return (
         <div className={props.className + " main-product"}>
             <div className="product-image">
-                <img src={`images/${props.value.title}-1.png`} alt={props.value.title} />
+                <a href={"/product?id=" + props.value._id}>
+                    <img src={`images/${props.value.category}/${props.value.title}-1.png`} alt={props.value.title} />
+                </a>
             </div>
             <div className="product-description">
-                {props.value.title}
+                <a href={"/product?id=" + props.value._id}>
+                    {props.value.title}
+                </a>
             </div>
             <div className="product-control">
                 <div className="product-price">{props.value.price} BYN</div>

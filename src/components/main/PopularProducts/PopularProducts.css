@@ -15,7 +15,7 @@ main .main-popproducts {
     grid-template-columns: repeat(4, 250px);
     grid-template-rows: 360px 360px;
     justify-content: center;
-    gap: 10px
+    gap: 30px
 }
 
 @media screen and (min-width: 800px) and (max-width: 1199px) {

@@ -5,7 +5,7 @@ main .main-product {
 
 .main-product .product-image {
     height: 230px;
-    background-color: blanchedalmond;
+    background-color: white;
     margin-bottom: 10px;
 }
 
@@ -21,6 +21,12 @@ main .main-product {
     font-weight: 500;
     margin-bottom: 10px;
 }
+
+.product-description a {
+    color: black;
+    text-decoration: none;
+}
+
 
 .main-product .product-control {
     height: 30px;
