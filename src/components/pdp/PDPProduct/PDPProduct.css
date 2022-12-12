@@ -27,6 +27,13 @@
 
 .pdp-product_image > img {
     display: block;
-    width: 100px;
-    height: 100px;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    width: 98px;
+    height: 98px;
+    transition: 0.2s;
+}
+
+.pdp-product_image > img:hover {
+    border: 1px solid black;
 }

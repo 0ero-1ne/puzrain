@@ -6,15 +6,17 @@ import Description from './Description/Description';
 import '../main/Main.css';
 import './PDP.css';
 
-export default function PDP() {
+export default function PDP(props) {
+    const product = props.product;
+
     return (
         <div className="main-pdp">
-            <Breadcrumbs value="Catalog / 3x3 / Gan Super Puper 357" />  
+            <Breadcrumbs value={`<a href="/catalog">Catalog</a> / ${product.category} / ${product.title}`} />
             <div className="main-pdp_control">
-                <PDPProduct />
-                <Panel />
+                <PDPProduct product={product} />
+                <Panel product={product} />
             </div>
-            <Description />
+            <Description value={product.description}/>
             <div className="main-pdp_thanks">
                 Спасибо, что выбираете нас :)
             </div>

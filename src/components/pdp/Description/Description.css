@@ -9,6 +9,11 @@
     margin-bottom: 10px;
 }
 
+.main-pdp_description .pdp-description_text {
+    width: 700px;
+}
+
 .main-pdp_description p {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
 }

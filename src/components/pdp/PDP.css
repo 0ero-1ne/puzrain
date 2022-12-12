@@ -10,3 +10,17 @@
     font-weight: 500;
     margin-top: 20px;
 }
+
+.main-pdp .pdp-breacrumbs {
+    font-size: 22px;
+    color: #505050;
+}
+
+.main-pdp .pdp-breacrumbs a {
+    color: #505050;
+    text-decoration: none;
+}
+
+.main-pdp .pdp-breacrumbs a:hover {
+    color: black;
+}

@@ -9,21 +9,16 @@
     font-size: 25px;
 }
 
-.pdp-panel_title .stock_status {
-    margin-left: 20px;
-    padding: 5px 20px;
+.pdp-panel_button.stock_status_true {
+    background: #00ff00;
     color: white;
     font-weight: 700;
-    border-radius: 5px;
-    display: inline-block;
 }
 
-.pdp-panel_title .stock_status_true {
-    background: #00ff00;
-}
-
-.pdp-panel_title .stock_status_false {
+.pdp-panel_button.stock_status_false {
     background: #ff0000;
+    color: white;
+    font-weight: 700;
 }
 
 .main-pdp_control .pdp-panel_main {

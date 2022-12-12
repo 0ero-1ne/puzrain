@@ -1,7 +1,9 @@
+import parse from 'html-react-parser';
+
 export default function Breadcrumbs(props) {
     return (
-        <p>
-            {props.value}
+        <p className="pdp-breacrumbs">
+            {parse(props.value)}
         </p>
     );
 }
