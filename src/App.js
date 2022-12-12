@@ -21,18 +21,20 @@ function App() {
     return (
         <>
             <Header />
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Main />}/>
-                    <Route path="/about" element={<About />}/>
-                    <Route path="/delivery" element={<Delivery />}/>
-                    <Route path="/payment" element={<Payment />}/>
-                    <Route path="/contacts" element={<Contacts />}/>
-                    <Route path="/basket" element={<BasketPage />}/>
-                    <Route path="/product" element={<PDPPage />}/>
-                    <Route path="/catalog" element={<PLPPage />}/>
-                </Routes>
-            </BrowserRouter>
+            <main>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Main />}/>
+                        <Route path="/about" element={<About />}/>
+                        <Route path="/delivery" element={<Delivery />}/>
+                        <Route path="/payment" element={<Payment />}/>
+                        <Route path="/contacts" element={<Contacts />}/>
+                        <Route path="/basket" element={<BasketPage />}/>
+                        <Route path="/product" element={<PDPPage />}/>
+                        <Route path="/catalog" element={<PLPPage />}/>
+                    </Routes>
+                </BrowserRouter>
+            </main>
             <Footer />
         </>
     );
