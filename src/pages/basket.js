@@ -6,10 +6,8 @@ export default function BasketPage() {
     document.querySelector('title').innerText = "Puzrain - Корзина";
 
     return (
-        <main>
-            <div className="content">
-                <Basket />
-            </div>
-        </main>
+        <div className="content">
+            <Basket />
+        </div>
     );
 }
