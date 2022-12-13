@@ -22,7 +22,7 @@ export default function ProductElement(props) {
     }
 
     return (
-        <div className={props.className + " main-product"}>
+        <div className={props.className + " main-product"} category={product.category}>
             <div className="product-image">
                 <a href={"/product?id=" + product._id}>
                     <img src={`images/${product.category}/${props.value.title}-1.png`} alt={product.title} />
