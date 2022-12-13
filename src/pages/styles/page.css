@@ -43,6 +43,14 @@
     border-radius: 10px;
 }
 
+main .main-reviews {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
 @media screen and (min-width: 800px) and (max-width: 1199px) {
     .infopage-images img {
         height: 200px;
@@ -62,5 +70,14 @@
         font-size: 16px;
         font-weight: 400;
         margin: 15px 0;
+    }
+
+    main .main-reviews {
+        grid-template-columns: repeat(2, 280px);
+        justify-content: center;
+    }
+
+    main .reviews-header {
+        text-align: center;
     }
 }
