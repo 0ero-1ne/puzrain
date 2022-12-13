@@ -9,8 +9,8 @@
 
 .main-pdp_product img {
     display: block;
-    width: 330px;
-    height: 330px;
+    width: 328px;
+    height: 328px;
 }
 
 .main-pdp_product .pdp-product_images {
@@ -36,4 +36,16 @@
 
 .pdp-product_image > img:hover {
     border: 1px solid black;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .main-pdp_control .main-pdp_product {
+        width: 330px;
+        height: 430px;
+        flex-direction: column;
+    }
+
+    .main-pdp_product .pdp-product_images {
+        flex-direction: row;
+    }
 }

@@ -1,8 +1,19 @@
+import { useDispatch } from 'react-redux';
+import { addProduct } from '../../../store/basketSlice';
+
 import './Panel.css';
 
 export default function Panel(props) {
     const product = props.product;
     const inStock = product.quantity ? true : false;
+
+    const dispatch = useDispatch();
+    
+    const addGood = () => {
+        if (dispatch(addProduct({product}))) {
+            alert('Товар добавлен в корзину!');
+        }
+    }
 
     return (
         <div className="main-pdp_panel">
@@ -16,13 +27,13 @@ export default function Panel(props) {
                             inStock ? "В наличии" : "Нет в наличии"
                         }
                     </div>
-                    <div className="pdp-panel_button basket_button">В корзину</div>
+                    <div className="pdp-panel_button basket_button" onClick={addGood}>В корзину</div>
                     <div className="pdp-panel_button fav_button">В избранное</div>
                     <h3 className="pdp-panel_price">Цена: {product.price} BYN</h3>
                 </div>
                 <div className="pdp-panel_info">
                     <div className="panel-info_part">
-                        <h3>Краткая информация о товаре</h3>
+                        <h3>Кратко о товаре</h3>
                         <div className="pdp-product_creator">Произодитель: {product.company}</div>
                         <div className="pdp-product_country">Страна выпуска: {product.country}</div>
                         <div className="pdp-product_garanty">Гарантия: 6 месяцев</div>

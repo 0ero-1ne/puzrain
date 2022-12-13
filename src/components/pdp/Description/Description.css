@@ -9,11 +9,75 @@
     margin-bottom: 10px;
 }
 
-.main-pdp_description .pdp-description_text {
+.main-pdp_description .pdp-description_content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pdp-description_content .pdp-description_text {
     width: 700px;
+}
+
+.pdp-description_content .pdp-description_review {
+    width: 400px;
+}
+
+.pdp-description_review label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.pdp-description_review input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.pdp-description_review textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Montserrat', Verdana, sans-serif;
+    outline: none;
+}
+
+.pdp-description_review input[type=submit] {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #c10000;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 .main-pdp_description p {
     margin-bottom: 10px;
     font-size: 18px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .main-pdp .main-pdp_description {
+        font-size: 14px;
+    }
+
+    .pdp-description_content .pdp-description_text {
+        width: 500px;
+    }
+
+    .pdp-description_text p {
+        font-size: 16px;
+    }
+
+    .pdp-description_content .pdp-description_review {
+        width: 250px;
+    }
 }

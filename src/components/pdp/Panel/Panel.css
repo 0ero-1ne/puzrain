@@ -79,3 +79,22 @@
     font-size: 26px;
     margin-bottom: 5px;
 }
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .pdp-panel_buttons .pdp-panel_button {
+        width: 160px;
+    }
+
+    .pdp-panel_buttons .pdp-panel_price {
+        width: 160px;
+        font-size: 22px;
+    }
+
+    .pdp-panel_main .pdp-panel_info {
+        font-size: 18px;
+    }
+
+    .pdp-panel_info h3 {
+        font-size: 20px;
+    }
+}

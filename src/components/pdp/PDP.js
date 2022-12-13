@@ -16,7 +16,7 @@ export default function PDP(props) {
                 <PDPProduct product={product} />
                 <Panel product={product} />
             </div>
-            <Description value={product.description}/>
+            <Description value={product.description} img={product.category + "/" + product.title + "-1.png"}/>
             <div className="main-pdp_thanks">
                 Спасибо, что выбираете нас :)
             </div>
