@@ -1,7 +1,10 @@
+import { useState } from 'react';
+
 import './RegionSwitcher.css';
 
 export default function Menu()
 {
+    const [region, setRegion] = useState('Минск');
     function showRegions() {
         let regionsBlockState = document.getElementsByClassName('regions')[0].style.display;
         
@@ -11,13 +14,14 @@ export default function Menu()
 
     function setNewRegion(event) {
         const newRegion = event.target.innerText;
-        document.getElementById('region').innerText = newRegion + " " +  String.fromCharCode(8595);
+        setRegion(newRegion);
         document.getElementsByClassName('regions')[0].style.display = "none";
+        return;
     }
 
     return(
         <div className="regswitch">
-            <span id="region" onClick={showRegions}>Минск &#8595;</span>
+            <span id="region" onClick={showRegions}>{region} &#8595;</span>
             <div className="regions" style={{display: "none"}}>
                 <div className="region-item" onClick={setNewRegion}>Брест</div>
                 <div className="region-item" onClick={setNewRegion}>Витебск</div>
