@@ -21,7 +21,7 @@ main .main-comments {
     display: block;
     text-align: right;
     padding-right: 100px;
-    margin: 15px 0;
+    margin: 20px 0 15px;
     font-size: 20px;
     font-weight: 500;
 }
