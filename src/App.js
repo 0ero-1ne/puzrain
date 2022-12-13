@@ -10,6 +10,7 @@ import BasketPage from './pages/basket';
 import PDPPage from './pages/pdp';
 import PLPPage from './pages/plp';
 import Reviews from './pages/reviews';
+import FavPage from './pages/fav';
 
 import './App.css';
 import URLS from './URLS';
@@ -33,6 +34,7 @@ function App() {
                         <Route path="/product" element={<PDPPage />}/>
                         <Route path="/catalog" element={<PLPPage />}/>
                         <Route path="/reviews" element={<Reviews />}/>
+                        <Route path="/favourite" element={<FavPage />}/>
                     </Routes>
                 </BrowserRouter>
             </main>
