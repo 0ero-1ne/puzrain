@@ -59,6 +59,52 @@ main .fav-goods {
     row-gap: 20px;
 }
 
+main .main-login_form {
+    width: 500px;
+    margin-top: 50px;
+}
+
+.main-login_form input {
+    display: block;
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid #c4c4c4;
+}
+
+.main-login_form label {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.main-login_form input[type=submit] {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    border: none;
+    background-color: #c10000;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-login_form input[type=submit]:hover {
+    background-color: #e41313;
+}
+
+.main-login_form .main-form_links p {
+    margin-bottom: 5px;
+}
+
+.main-form_links p a {
+    color: black;
+}
+
 @media screen and (min-width: 800px) and (max-width: 1199px) {
     .infopage-images img {
         height: 200px;
