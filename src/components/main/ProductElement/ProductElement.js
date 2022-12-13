@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
-import { addProduct } from '../../../store/basketSlice';
+import { addProductToBasket } from '../../../store/basketSlice';
+import { addProductToFav } from '../../../store/favSlice';
 
 import './ProductElement.css';
 
@@ -8,9 +9,15 @@ export default function ProductElement(props) {
 
     const dispatch = useDispatch();
     
-    const addGood = () => {
-        if (dispatch(addProduct({product}))) {
+    const addGoodToBasket = () => {
+        if (dispatch(addProductToBasket({product}))) {
             alert('Товар добавлен в корзину!');
+        }
+    }
+
+    const addGoodToFav = () => {
+        if (dispatch(addProductToFav({product}))) {
+            alert('Товар добавлен в избранное!');
         }
     }
 
@@ -28,10 +35,10 @@ export default function ProductElement(props) {
             </div>
             <div className="product-control">
                 <div className="product-price">{product.price} BYN</div>
-                <div className="product-tobasket product-button" onClick={addGood}>
+                <div className="product-tobasket product-button" onClick={addGoodToBasket}>
                     <img src="basket.png" alt="To Basket" />
                 </div>
-                <div className="product-tofav product-button">
+                <div className="product-tofav product-button" onClick={addGoodToFav}>
                     <img src="fav.png" alt="To Fav" />
                 </div>
             </div>

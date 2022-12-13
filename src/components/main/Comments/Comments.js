@@ -21,8 +21,9 @@ export default function Comments() {
         });
     }
 
-    result.length = 3;
+    result.length = result.length === 0 ? 0 : result.length >= 1 && result.length <=2 ? 2 : 3;
 
+    if (result[0])
     return (
         <div className="main-comments">
             <h2 className="comments-header">За нас говорят наши покупатели</h2>
