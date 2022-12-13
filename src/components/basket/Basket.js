@@ -17,7 +17,7 @@ export default function Basket() {
     return (
         <div className="main-basket">
             <div className="basket-goods">
-                {resultProducts}
+                {resultProducts.length > 0 ? resultProducts : <h2 style={{fontSize: 36, fontWeight: 500}}>Нет товаров</h2>}
             </div>
             <Card products={products} />
         </div>

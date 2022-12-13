@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { removeProduct, changeCount } from '../../../store/basketSlice';
+import { removeProductFromBasket, changeCount } from '../../../store/basketSlice';
 
 import './Good.css';
 
@@ -7,7 +7,7 @@ export default function Good(props) {
     const product = props.product;
 
     const dispatch = useDispatch();
-    const removeGood = () => dispatch(removeProduct({product}));
+    const removeGood = () => dispatch(removeProductFromBasket({product}));
 
     const changeGoodCount = () => {
         let qty = document.getElementById(product._id + "-qty").value;
