@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './Filters.css';
 import Categories from './Categories/Categories';
 
-export default function Filters() {
+export default function Filters(props) {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
@@ -13,7 +13,6 @@ export default function Filters() {
 
     return (
         <div className="plp-content_filters">
-            <form id="filters_form"></form>
             <Categories categories={categories} />
         </div>
     );
