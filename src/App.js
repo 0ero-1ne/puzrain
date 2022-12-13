@@ -9,12 +9,12 @@ import Payment from './pages/payment';
 import BasketPage from './pages/basket';
 import PDPPage from './pages/pdp';
 import PLPPage from './pages/plp';
+import Reviews from './pages/reviews';
 
 import './App.css';
 import URLS from './URLS';
 
 function App() {
-
     if (URLS.indexOf(window.location.pathname) === -1)
         return window.location.pathname = "/";
 
@@ -32,6 +32,7 @@ function App() {
                         <Route path="/basket" element={<BasketPage />}/>
                         <Route path="/product" element={<PDPPage />}/>
                         <Route path="/catalog" element={<PLPPage />}/>
+                        <Route path="/reviews" element={<Reviews />}/>
                     </Routes>
                 </BrowserRouter>
             </main>
