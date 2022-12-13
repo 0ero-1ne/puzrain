@@ -11,3 +11,10 @@
     margin-bottom: 5px;
     cursor: pointer;
 }
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .main-plp .plp-content_filters {
+        width: 300px;
+        grid-template-columns: repeat(2, 230px);
+    }
+}

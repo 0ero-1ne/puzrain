@@ -2,6 +2,7 @@
     transition: 0.2s ease;
     display: grid;
     grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
 }
 
 .filters-categories .filters-categories_category {
@@ -12,4 +13,8 @@
 
 .filters-categories_category label input{
     margin-right: 5px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    
 }

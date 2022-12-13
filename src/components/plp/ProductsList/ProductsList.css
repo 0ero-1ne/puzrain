@@ -3,9 +3,12 @@
     display: grid;
     justify-content: space-between;
     grid-template-columns: repeat(3, 230px);
-    row-gap: 30px;
+    row-gap: 40px;
 }
 
-/* .plp-content_products .plp-products_product {
-    border: 1px solid black;
-} */
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+    .plp-content .plp-content_products {
+        width: 480px;
+        grid-template-columns: repeat(2, 230px);
+    }
+}
