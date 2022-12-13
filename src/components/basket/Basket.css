@@ -7,8 +7,8 @@ main .main-basket {
 .main-basket .basket-goods {
     display: grid;
     grid-template-columns: repeat(3, 250px);
+    column-gap: 30px;
     flex: 1 1 auto;
-    justify-content: center;
 }
 
 @media screen and (min-width: 800px) and (max-width: 1199px) {

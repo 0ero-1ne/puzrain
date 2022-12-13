@@ -62,4 +62,8 @@
         width: 300px;
         height: 400px;
     }
+
+    .basket-card .card-order {
+        height: 60px;
+    }
 }
