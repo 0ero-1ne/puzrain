@@ -11,12 +11,13 @@ export default function Good(props) {
 
     const changeGoodCount = () => {
         let qty = document.getElementById(product._id + "-qty").value;
-        if (qty === "0") {
+        if (+qty === 0) {
            return removeGood(); 
         }
-        if (qty === "")
-            return;
-        dispatch(changeCount({product, qty: +qty}));
+        if (qty === "" || isNaN(+qty) || !isFinite(+qty))
+            return document.getElementById(product._id + "-qty").value = "";
+
+        dispatch(changeCount({product, qty: Math.abs(Math.floor(+qty))}));
         document.getElementById(product._id + "-qty").value = "";
     }
 
