@@ -4,13 +4,17 @@ const reHydrateStore = () => {
     if (localStorage.getItem('basket') !== null) {
         return JSON.parse(localStorage.getItem('basket')); // re-hydrate the store
     }
+
+    return {
+        basket: [],
+    };
 };
 
 const basketSlice = createSlice({
     name: 'basket',
     initialState: reHydrateStore(),
     reducers: {
-        addProduct(state, action) {
+        addProductToBasket(state, action) {
             const itemInBasket = state.basket.find(product => product._id === action.payload.product._id);
             if (itemInBasket) {
                 itemInBasket.basketQty++
@@ -18,7 +22,7 @@ const basketSlice = createSlice({
                 state.basket.push({...action.payload.product, basketQty: 1});
             }
         },
-        removeProduct(state, action) {
+        removeProductFromBasket(state, action) {
             state.basket = state.basket.filter(product => product._id !== action.payload.product._id);
         },
         changeCount(state, action) {
@@ -28,5 +32,5 @@ const basketSlice = createSlice({
     },
 });
 
-export const {addProduct, removeProduct, changeCount} = basketSlice.actions;
+export const {addProductToBasket, removeProductFromBasket, changeCount} = basketSlice.actions;
 export default basketSlice.reducer;
