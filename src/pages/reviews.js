@@ -30,7 +30,7 @@ export default function Reviews() {
         <div className="content">
             <h2 style={{fontWeight: 500, fontSize: 30, marginBottom: 20}} className="reviews-header">Отзывы о наших товарах</h2>
             <div className="main-reviews">
-                {result}
+                {result.length > 0 ? result : <h2 style={{fontSize: 26, fontWeight: 500}}>Нет отзывов</h2>}
             </div>
         </div>
     );

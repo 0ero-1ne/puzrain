@@ -51,6 +51,14 @@ main .main-reviews {
     row-gap: 20px;
 }
 
+main .fav-goods {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
 @media screen and (min-width: 800px) and (max-width: 1199px) {
     .infopage-images img {
         height: 200px;
@@ -73,6 +81,11 @@ main .main-reviews {
     }
 
     main .main-reviews {
+        grid-template-columns: repeat(2, 280px);
+        justify-content: center;
+    }
+
+    main .fav-goods {
         grid-template-columns: repeat(2, 280px);
         justify-content: center;
     }
