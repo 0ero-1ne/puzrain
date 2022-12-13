@@ -11,13 +11,16 @@ import PDPPage from './pages/pdp';
 import PLPPage from './pages/plp';
 import Reviews from './pages/reviews';
 import FavPage from './pages/fav';
+import Login from './pages/login';
+import Register from './pages/register';
+import ErrorPage from './pages/error';
 
 import './App.css';
 import URLS from './URLS';
 
 function App() {
     if (URLS.indexOf(window.location.pathname) === -1)
-        return window.location.pathname = "/";
+        return window.location.pathname = "/error";
 
     return (
         <>
@@ -35,6 +38,9 @@ function App() {
                         <Route path="/catalog" element={<PLPPage />}/>
                         <Route path="/reviews" element={<Reviews />}/>
                         <Route path="/favourite" element={<FavPage />}/>
+                        <Route path="/login" element={<Login />}/>
+                        <Route path="/register" element={<Register />}/>
+                        <Route path="/error" element={<ErrorPage />}/>
                     </Routes>
                 </BrowserRouter>
             </main>

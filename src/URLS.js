@@ -9,7 +9,10 @@ const URLS = [
     "/catalog",
     "/addresses",
     "/reviews",
-    "/favourite"
+    "/favourite",
+    "/login",
+    "/register",
+    "/error"
 ];
 
 export default URLS;
