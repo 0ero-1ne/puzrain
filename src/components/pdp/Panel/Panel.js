@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
-import { addProduct } from '../../../store/basketSlice';
+import { addProductToBasket } from '../../../store/basketSlice';
+import { addProductToFav } from '../../../store/favSlice';
 
 import './Panel.css';
 
@@ -9,9 +10,15 @@ export default function Panel(props) {
 
     const dispatch = useDispatch();
     
-    const addGood = () => {
-        if (dispatch(addProduct({product}))) {
+    const addGoodToBasket = () => {
+        if (dispatch(addProductToBasket({product}))) {
             alert('Товар добавлен в корзину!');
+        }
+    }
+
+    const addGoodToFav = () => {
+        if (dispatch(addProductToFav({product}))) {
+            alert('Товар добавлен в избранное!');
         }
     }
 
@@ -27,8 +34,8 @@ export default function Panel(props) {
                             inStock ? "В наличии" : "Нет в наличии"
                         }
                     </div>
-                    <div className="pdp-panel_button basket_button" onClick={addGood}>В корзину</div>
-                    <div className="pdp-panel_button fav_button">В избранное</div>
+                    <div className="pdp-panel_button basket_button" onClick={addGoodToBasket}>В корзину</div>
+                    <div className="pdp-panel_button fav_button" onClick={addGoodToFav}>В избранное</div>
                     <h3 className="pdp-panel_price">Цена: {product.price} BYN</h3>
                 </div>
                 <div className="pdp-panel_info">
