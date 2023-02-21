@@ -14,6 +14,7 @@ import FavPage from './pages/fav';
 import Login from './pages/login';
 import Register from './pages/register';
 import ErrorPage from './pages/error';
+import Addresses from './pages/addresses';
 
 import './App.css';
 import URLS from './URLS';
@@ -41,6 +42,7 @@ function App() {
                         <Route path="/login" element={<Login />}/>
                         <Route path="/register" element={<Register />}/>
                         <Route path="/error" element={<ErrorPage />}/>
+                        <Route path="/addresses" element={<Addresses />}/>
                     </Routes>
                 </BrowserRouter>
             </main>
